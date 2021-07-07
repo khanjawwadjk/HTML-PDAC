@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>themeChallenge</title>
+
+    <! -----JS ---->
+        <script>
+            function redBlue() {
+                var pTheme1 = document.getElementById("s1");
+                var bTheme1 = document.getElementById("s2");
+                pTheme1.style = "color:red";
+                bTheme1.style = "color: blue";
+
+            }
+
+            function blueYellow() {
+                var pTheme2 = document.getElementById("s1");
+                var bTheme2 = document.getElementById("s2");
+                pTheme2.style = "color:blue";
+                bTheme2.style = "color: yellow";
+
+            }
+
+            function blackGreen() {
+                var pTheme3 = document.getElementById("s1");
+                var bTheme3 = document.getElementById("s2");
+                pTheme3.style = "color:black";
+                bTheme3.style = "color: green";
+
+            }
+        </script>
+</head>
+
+<body>
+    <h1>Theme Challenge</h1>
+    <br><br>
+
+    <h1>
+        <span id="s1">Pickup</span><span id="s2">Biz</span>
+        <br><br>
+        <button onclick="redBlue()">Theme1</button>
+        <button onclick=" blueYellow()">Theme2</button>
+        <button onclick=" blackGreen()">Theme3</button>
+
+
+
+    </h1>
+
+</body>
+
+</html>

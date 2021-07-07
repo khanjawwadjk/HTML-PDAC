@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM1</title>
+
+    <script>
+        function setFullName() {
+            var fname = document.getElementById("fname");
+            var mname = document.getElementById("mname");
+            var lname = document.getElementById("lname");
+
+            var fullName = document.getElementById("fullName");
+            fullName.value = fname.value + " " + mname.value + " " + lname.value;
+        } 
+            
+       function myFunction1(){
+       var xyz = document.getElementById("fullName");
+       xyz.value=" ";
+       
+       }
+
+       function myFunction2(){
+       var xyz = document.getElementById("fname");
+       xyz.value=" ";
+       }
+
+       function myFunction3(){
+       var xyz = document.getElementById("mname");
+       xyz.value=" ";
+       }
+
+       function myFunction4(){
+       var xyz = document.getElementById("lname");
+       xyz.value=" ";
+       }
+    </script>
+</head>
+
+<body>
+  
+
+    <label>First Name</label>
+    <input type="text" id="fname">
+    <br><br>
+    <label>Middle Name</label>
+    <input type="text" id="mname">
+    <br><br>
+    <label>Last Name</label>
+    <input type="text" id="lname">
+    <br><br>
+    <label>Full Name</label>
+    <input type="text" id="fullName"><br><br>
+    <button onclick="setFullName()" >Full Name</button><br>
+
+    <button onclick="myFunction1()" >Clear full name</button>
+    <br>
+    <button onclick="myFunction2()" >clear first name</button>
+    <br>
+    <button onclick="myFunction3()" >Clear middle name</button>
+    <br>
+    <button onclick="myFunction4()" >Clear last name</button>
+
+
+
+</body>
+
+</html>
