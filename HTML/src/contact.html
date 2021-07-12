@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contact</title>
+
+<script>
+    function navColor(){
+    document.getElementById("bid").style=`background-color: ${sessionStorage.getItem("favColor")}`;
+    }
+</script>
+
+</head>
+
+<style>
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    figcaption{
+        text-align: center;
+    }
+figure{
+    display: inline-block;
+}
+</style>
+<body id="bid">                  
+    <h2>Contact Us</h2>
+    <hr>
+    <figure>
+        <img src="./contact1.jpg" alt="github">
+        <figcaption>GitHub</figcaption>
+    </figure>
+    
+   <figure>
+        <img src="./contact2.jpg" alt="Instagram">
+        <figcaption>Instagram</figcaption>
+    </figure>
+
+    <figure>
+        <img src="./contact3.png" alt="Facebook">
+        <figcaption>FaceBook</figcaption>
+    </figure>
+
+</body>
+<script>
+    navColor();
+</script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab3</title>
+
+  <script>
+    function setStoreValues() {
+      var nameData = document.getElementById("name");
+      var passData = document.getElementById("pass");
+
+      sessionStorage.setItem("userName", nameData.value);
+      sessionStorage.setItem("password", passData.value);
+      sessionStorage.setItem("confirmPass",document.getElementById("cPass").value);
+      sessionStorage.setItem("favColor", document.getElementById("colorPicker").value);
+    }
+
+    function getStoreValues() {
+      var nameData = document.getElementById("name");
+      var passData = document.getElementById("pass");
+
+      nameData.value = sessionStorage.getItem("userName");
+      passData.value = sessionStorage.getItem("password");
+      document.getElementById("cPass").value =sessionStorage.getItem("confirmPass");
+      document.getElementById("colorPicker").value =sessionStorage.getItem("favColor");
+
+      document.getElementById("bid").style = `background-color: ${sessionStorage.getItem("favColor")}`;
+    }
+  </script>
+</head>
+
+<!-----CSS------ -->
+<style>
+  #id1 {
+    font-weight: bold;
+    font-size: large;
+    padding-left: 400px;
+  }
+</style>
+
+<body id="bid">
+  <form id="id1">
+    <h1 style="color: blue">Form</h1>
+    <label>Name:</label><br />
+    <input type="text" placeholder="Enter Name" id="name" />
+    <br /><br />
+
+    <label>Password:</label><br />
+    <input type="Password" placeholder="Enter Password" id="pass" />
+    <br /><br />
+
+    <label>Confirm Password:</label><br />
+    <input type="Password" placeholder="Enter Password Again" id="cPass" />
+    <br /><br />
+    Gender: <input type="radio" name="gender" />Male
+    <input type="radio" name="gender" />Female <br /><br />
+    Hobbies: <input type="checkbox" name="" />Football
+    <input type="checkbox" name="" />Cricket
+    <input type="checkbox" name="" />Baseball <br /><br />
+    Date.Of.Birth: <input type="date" name="DOB" /> <br /><br />
+    <label>Color Picker:</label>
+    <input type="color" id="colorPicker" />
+    <br /><br />
+    <button onclick="setStoreValues()">Submit</button>
+
+    <button>Cancel</button>
+  </form>
+</body>
+<script>
+  getStoreValues();
+</script>
+
+</html>

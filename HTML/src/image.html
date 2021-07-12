@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+
+    <script>
+        function navColor(){
+        document.getElementById("bid").style=`background-color: ${sessionStorage.getItem("favColor")}`;
+        }
+      </script>
+
+
+</head>
+<style>
+    img{
+        height:200px;
+        width: 300px;
+    }
+    figure{
+        display: inline-block;
+    }
+</style>
+<body id="bid">
+    <h1>Kid Section</h1>
+    <figure>
+        <img src="./kid1.jpg" alt="">
+        <figcaption>Kid 1</figcaption>
+    </figure>
+    <figure>
+        <img src="./kid2.jpg" alt="">
+        <figcaption>Kid 2</figcaption>
+    </figure>
+    <figure>
+        <img src="./kid3.jpg" alt="">
+        <figcaption>Kid 3</figcaption>
+    </figure>
+
+    <h1>Teen Section</h1>
+    <figure>
+        <img src="./teen1.jpg" alt="">
+        <figcaption>Teen 1</figcaption>
+    </figure>
+    <figure>
+        <img src="./teen2.jpg" alt="">
+        <figcaption>Teen 2</figcaption>
+    </figure>
+    <figure>
+        <img src="./teen3.jpg" alt="">
+        <figcaption>Teen 3</figcaption>
+    </figure>
+
+    <h1>Men Section</h1>
+    <figure>
+        <img src="./men1.jpg" alt="">
+        <figcaption>Men 1</figcaption>
+    </figure>
+    <figure>
+        <img src="./men2.jpg" alt="">
+        <figcaption>Men 2</figcaption>
+    </figure>
+    <figure>
+        <img src="./men3.jpg" alt="">
+        <figcaption>Men 3</figcaption>
+    </figure>
+
+    
+</body>
+<script>
+    navColor();
+</script>
+</html>
