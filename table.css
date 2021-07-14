@@ -1,0 +1,39 @@
+table{
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+    
+}
+th{
+    background-color:chocolate;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+td{
+    
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+tr:nth-child(even){
+    background-color: yellowgreen;
+}
+tr:nth-child(odd){
+    background-color:darkgoldenrod;
+}
+
+.table h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    text-decoration: underline;
+    letter-spacing: 10px;
+    text-transform: capitalize;
+}
+.table h4{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 2px;
+
+}
